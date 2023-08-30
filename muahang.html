@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÁN HÀNG</title>
+    <link rel="stylesheet" href="css/muahang.css">
+    <script src="js/muahang.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./image/logo.jpg" alt="Logo" style="right: 100px; width: 140px;">
+            </div>
+            <ul class="menu">
+                <li><a href="./trangchu.html">Trang chủ</a></li>
+                <li><a href="./tintuc.html">Tin tức</a></li>
+                <li><a href="./sanpham.html">Sản phẩm</a></li>
+            </ul>
+            <a href="./dangkythanhvien.html" style="float: right; color: blue;"><b>Đăng ký</b></a>
+        </nav>
+    </header>
+    <h1>BÁN HÀNG</h1>
+    <div class="container">
+        <label for="price-select">Chọn mức giá:</label>
+        <select id="price-select" onchange="filterProducts()">
+            <option value="all">Tất cả</option>
+            <option value="low">Dưới $10</option>
+            <option value="medium">$10 - $20</option>
+            <option value="high">Trên $20</option>
+        </select>
+    </div>
+    <hr width="500px">
+    <table width="500px" border="2" cellpadding="5" align="center" class="form">
+        <tr class="head">
+            <th><input type="checkbox" id="chonhet" onclick="selectAll()"></th>
+            <th>Hàng hoá</th>
+            <th>Đơn giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+        </tr>
+        <tr class="content">
+            <td><input type="checkbox" class="chon" checked onchange="toggleQuantityInput(0)"></td>
+            <td>Bánh quế so-co-la</td>
+            <td>$10</td>
+            <td><input value="0" min="0" name="soluong" id="sl0" onkeyup="calculateTotal(0)"></td>
+            <td class="tien"></td>
+        </tr>
+        <tr class="content">
+            <td><input type="checkbox" class="chon" checked onchange="toggleQuantityInput(1)"></td>
+            <td>Kẹo mềm duomint</td>
+            <td>$12</td>
+            <td><input value="0" name="soluong" id="sl1" onkeyup="calculateTotal(1)"></td>
+            <td class="tien"></td>
+        </tr>
+        <tr class="content">
+            <td><input type="checkbox" class="chon" checked onchange="toggleQuantityInput(2)"></td>
+            <td>Bánh quy Klop Saluto Phô mai</td>
+            <td>$10</td>
+            <td><input value="0" name="soluong" id="sl2" onkeyup="calculateTotal(2)"></td>
+            <td class="tien"></td>
+        </tr>
+        <tr class="content">
+            <td><input type="checkbox" class="chon" checked onchange="toggleQuantityInput(3)"></td>
+            <td>Bánh quế Fullo va-ni sữa</td>
+            <td> $5</td>
+            <td><input value="0" name="soluong" id="sl3" onkeyup="calculateTotal(3)"></td>
+            <td class="tien"></td>
+        </tr>
+        <tr class="content">
+            <td><input type="checkbox" class="chon" checked onchange="toggleQuantityInput(4)"></td>
+            <td>Kẹo Blaster Sukocok - Sô-cô-la Vani nhân Cà phê</td>
+            <td>$20</td>
+            <td><input value="0" name="soluong" id="sl4" onkeyup="calculateTotal(4)"></td>
+            <td class="tien"></td>
+        </tr>
+        <tr class="content">
+            <td><input type="checkbox" class="chon" checked onchange="toggleQuantityInput(5)"></td>
+            <td>Bánh xốp Tango Sô-cô-la (160g)</td>
+            <td>$30</td>
+            <td><input value="0" name="soluong" id="sl5" onkeyup="calculateTotal(5)"></td>
+            <td class="tien"></td>
+        </tr>
+        <tr class="content">
+            <td><input type="checkbox" class="chon" checked onchange="toggleQuantityInput(6)"></td>
+            <td>Thạch vita jely</td>
+            <td>$90</td>
+            <td><input value="0" name="soluong" id="sl6" onkeyup="calculateTotal(6)"></td>
+            <td class="tien"></td>
+        </tr>
+        <tr class="end">
+            <th colspan="4">TỔNG</th>
+            <td id="tongtien"></td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

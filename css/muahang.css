@@ -1,0 +1,66 @@
+body {
+  background: #d8e4f4;
+  font-family: Arial;
+}
+header {
+  background-image: url(http://localhost/TranNgocCuong-HaQuocVuong-CN21/image/3.jpg);
+  background-size: cover;
+  height: 150px;
+}
+@media screen and (max-width: 300px) {
+  .menu a {
+    float: none;
+    width: 100%;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 100px;
+  width: 100px; /* Điều chỉnh chiều cao phù hợp */
+  float: right;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 50px;
+}
+
+.menu li a {
+  color: blue;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  text-align: center;
+  align-items: center;
+  padding: 0%;
+}
+.form .head {
+  background-color: goldenrod;
+}
+.form .content {
+  background-color: aqua;
+}
+.form .end {
+  background-color: goldenrod;
+}

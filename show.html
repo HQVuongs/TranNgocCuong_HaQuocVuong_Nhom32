@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <title>Slideshow</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="./css/show.css">
+    <script src="./js/show.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./image/logo.jpg" alt="Logo" style="right: 100px; width: 140px;">
+            </div>
+            <ul class="menu">
+                <li><a href="./trangchu.html">Trang chủ</a></li>
+                <li><a href="./tintuc.html">Tin tức</a></li>
+                <li><a href="./sanpham.html">Sản phẩm</a></li>
+            </ul>
+            <a href="./dangkythanhvien.html" style="float: right; color: blue;"><b>Đăng ký</b></a>
+        </nav>
+    </header>
+    <h1>CÁC LOẠI BÁNH KẸO</h1>
+    <div class="container">
+        <img id="slideshow-image" src="./image/hinh1.jpg" />
+        <div id="slideshow-controls">
+            <button class="prev" onclick="prevImage()">Prev</button>
+            <span id="image-position"> Ảnh 1/9 </span>
+            <button class="next" onclick="nextImage()">Next</button>
+        </div>
+    </div>
+</body>
+
+</html>

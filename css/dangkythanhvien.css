@@ -1,0 +1,88 @@
+body {
+  background-image: url(http://localhost/TranNgocCuong-HaQuocVuong-CN21/image/hinhnen2.jpg);
+  color: rgb(15, 232, 247);
+  font-family: Arial;
+}
+header {
+  background-image: url(http://localhost/TranNgocCuong-HaQuocVuong-CN21/image/3.jpg);
+  background-size: cover;
+  height: 150px; /* Điều chỉnh chiều cao phù hợp */
+}
+@media screen and (max-width: 300px) {
+  .menu a {
+    float: none;
+    width: 100%;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 100px;
+  width: 100px; /* Điều chỉnh chiều cao phù hợp */
+  float: right;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 50px;
+}
+
+.menu li a {
+  color: blue;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+.container h2 {
+  text-align: center;
+}
+#form1 {
+  width: 400px;
+  margin: auto;
+  padding: 10px 40px;
+  background-color: rgb(73, 144, 185);
+  border: 1px solid black;
+}
+#form1 .txt {
+  width: 400px;
+  padding: 6px;
+  background-color: rgb(247, 241, 241);
+}
+#form1 fieldset {
+  margin-top: 0px;
+  background-color: rgb(247, 241, 241);
+  width: 400px;
+  padding: 5px;
+}
+#form1 button {
+  border-radius: 8px;
+  width: 100px;
+  height: 50px;
+  background-color: azure;
+}
+#form1 button:hover {
+  border-radius: 8px;
+  width: 120px;
+  height: 60px;
+  background-color: blueviolet;
+}
+/* Style nền vàng cho các ô nhập gặp lỗi */
+.loi {
+  background: yellow !important;
+  border-color: red;
+}
